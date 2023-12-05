@@ -1,0 +1,58 @@
+.game {
+    width: 400px;
+    height: 600px;
+    border: 1px solid #000;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+#bob {
+    width: 60px;
+    height: 80px;
+    background-image: url(img/0bob.png);
+    background-size: 60px 80px;
+    position: absolute;
+    top: 100px;
+    left: 160px;
+    transition: left 0.3s ease;
+    image-rendering: pixelated;
+  }
+#wall {
+    width: 80px;
+    height: 60px;
+    background-image: url(img/0wall.png);
+    background-size: 80px 60px;
+    position: absolute;
+    animation: wallMove 1s infinite linear;
+    image-rendering: pixelated;
+    animation-timing-function: linear;
+}
+#wall2 {
+    width: 80px;
+    height: 60px;
+    background-image: url(img/0wall.png);
+    background-size: 80px 60px;
+    position: absolute;
+    animation: wallMove 1s infinite linear;
+    image-rendering: pixelated;
+    animation-timing-function: linear;
+}
+#boost {
+    width: 60px;
+    height: 80px;
+    background-image: url(img/boost.png);
+    background-size: 60px 80px;
+    position: absolute;
+    animation: wallMove 1s infinite linear;
+    image-rendering: pixelated;
+    animation-timing-function: linear;
+}
+
+@keyframes wallMove {
+    0% {
+        top: 666px;
+    }
+    100% {
+        top: -80px;
+    }
+}
